@@ -1,0 +1,55 @@
+algorithm Count
+Var
+text : string;
+
+function Number_of_char(t: string): entier
+{
+   count_char = 0;
+   for (i=0; i< t.length; i++)
+     {
+      if(t[i] != "" && t[i] != ".")
+      {
+       count_char++;
+      }
+    return count_char;
+}
+
+function number_of_words(t:string): entier
+{
+ count_words = 0;
+ for(i=0;i<text.length;i++)
+   {
+    if(t[i] ="" && t[i] !=".")
+     {
+     count_words + +;
+     }
+   return count_words;
+} 
+
+function vowels(t:string): entier
+{
+ count_vow=0
+ 
+ for (i=0;i<t.length;i++)
+  {
+   if (t[i] in ["a","e","i","o","u","y"])
+    {
+     count_vow++;
+    }
+   return count_vow ;
+}
+
+
+
+BEGIN
+ecrire ("ecrivez votre texte avec un point à la fin");
+lire(text);
+ c = Number_of_char(text);
+ Afficher(" le nbre de characters est :",c);
+ w = number_of_words(text);
+ Afficher(" le nbre de words est :",w);
+ v = vowels(text);
+ Afficher(" le nbre de vowels est :",v);
+
+END
+  
